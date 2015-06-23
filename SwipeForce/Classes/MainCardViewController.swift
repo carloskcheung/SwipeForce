@@ -356,7 +356,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "card2DetailSegue") {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
