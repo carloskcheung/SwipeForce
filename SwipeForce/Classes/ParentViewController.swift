@@ -17,6 +17,8 @@ class ParentViewController: UIViewController, SFRestDelegate {
 
         let restAPI = SFRestAPI.sharedInstance()
         let request = restAPI.requestForQuery("SELECT Id, Name, Email, Status, Company, Phone, Fax, MobilePhone, Title, LeadSource, CreatedDate, City, State, LastActivityDate FROM Lead ORDER BY Name LIMIT 20")
+        
+        // OFFSET 20 --> SQL nth query look it up
 
         // Do any additional setup after loading the view.
         SendClass.doThatThing(request, withDelegate: self)
@@ -48,6 +50,7 @@ class ParentViewController: UIViewController, SFRestDelegate {
                 var state = record.objectForKey("State") as? String
                 var lastactivitydate = record.objectForKey("LastActivityDate") as? String
                 
+             //append to array
                 
             }
         }
@@ -77,7 +80,10 @@ class ParentViewController: UIViewController, SFRestDelegate {
     // MARK: - Navigation
     
     var index : Int = 0;
+    // everytime swipe {
+    // index : int x+4}
 
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
