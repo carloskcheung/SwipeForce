@@ -24,21 +24,53 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var firstCardAcceptedImage: UIImageView!
     @IBOutlet weak var firstCardRejectedImage: UIImageView!
     @IBOutlet weak var firstCardLaterImage: UIImageView!
+    @IBOutlet weak var firstCardTitleLabel: UILabel!
+    @IBOutlet weak var firstCardCompanyLabel: UILabel!
+    @IBOutlet weak var firstCardCityLabel: UILabel!
+    @IBOutlet weak var firstCardStateLabel: UILabel!
+    @IBOutlet weak var firstCardSourceLabel: UILabel!
+    @IBOutlet weak var firstCardStatusLabel: UILabel!
+    @IBOutlet weak var firstCardEmailLabel: UILabel!
+    @IBOutlet weak var firstCardNameLabel: UILabel!
     
     @IBOutlet weak var secondCardOverlay: UIView!
     @IBOutlet weak var secondCardAcceptedImage: UIImageView!
     @IBOutlet weak var secondCardLaterImage: UIImageView!
     @IBOutlet weak var secondCardRejectedImage: UIImageView!
+    @IBOutlet weak var secondCardTitleLabel: UILabel!
+    @IBOutlet weak var secondCardCompanyLabel: UILabel!
+    @IBOutlet weak var secondCardCityLabel: UILabel!
+    @IBOutlet weak var secondCardStateLabel: UILabel!
+    @IBOutlet weak var secondCardEmailLabel: UILabel!
+    @IBOutlet weak var secondCardSourceLabel: UILabel!
+    @IBOutlet weak var secondCardStatusLabel: UILabel!
+    @IBOutlet weak var secondCardNameLabel: UILabel!
     
     @IBOutlet weak var thirdCardOverlay: UIView!
     @IBOutlet weak var thirdCardAccptedImage: UIImageView!
     @IBOutlet weak var thirdCardLaterImage: UIImageView!
     @IBOutlet weak var thirdCardRejectedImage: UIImageView!
+    @IBOutlet weak var thirdCardTitleLabel: UILabel!
+    @IBOutlet weak var thirdCardCompanyLabel: UILabel!
+    @IBOutlet weak var thirdCardCityLabel: UILabel!
+    @IBOutlet weak var thirdCardStateLabel: UILabel!
+    @IBOutlet weak var thirdCardEmailLabel: UILabel!
+    @IBOutlet weak var thirdCardSourceLabel: UILabel!
+    @IBOutlet weak var thirdCardStatusLabel: UILabel!
+    @IBOutlet weak var thirdCardNameLabel: UILabel!
     
     @IBOutlet weak var fourthCardOverlay: UIView!
     @IBOutlet weak var fourthCardAcceptedImage: UIImageView!
     @IBOutlet weak var fourthCardLaterImage: UIImageView!
     @IBOutlet weak var fourthCardRejectedImage: UIImageView!
+    @IBOutlet weak var fourthCardTitleLabel: UILabel!
+    @IBOutlet weak var fourthCardCompanyLabel: UILabel!
+    @IBOutlet weak var fourthCardCityLabel: UILabel!
+    @IBOutlet weak var fourthCardStateLabel: UILabel!
+    @IBOutlet weak var fourthCardEmailLabel: UILabel!
+    @IBOutlet weak var fourthCardSourceLabel: UILabel!
+    @IBOutlet weak var fourthCardStatusLabel: UILabel!
+    @IBOutlet weak var fourthCardNameLabel: UILabel!
     
     @IBOutlet weak var tagView: UIView!
     @IBOutlet weak var labelView: UIView!
@@ -104,7 +136,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         labelView.layer.cornerRadius = 5.0
         labelView.layer.masksToBounds = true
         
-        self.nameLabel.text = names[0]
+//        self.nameLabel.text = names[0]
         self.labelLabel!.text = labels[0]
         
         photoImage.layer.borderWidth = 3.0
@@ -268,9 +300,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                 
                 var topCardLaterImage = self.cardLaterImage.removeAtIndex(0)
                 self.cardLaterImage.append(topCardLaterImage)
-                
-                self.photoImage.center.x = 160
-                
+                                
         })
     }
     
@@ -360,8 +390,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         if (segue.identifier == "card2DetailSegue") {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
-            var detailVC = segue!.destinationViewController as DetailViewController;
-            detailVC.passName = nameLabel.text
+            var detailVC = segue!.destinationViewController as! DetailViewController;
             detailVC.passPhoto = photoImage.image
             detailVC.passColor = cardBackground.backgroundColor
             detailVC.passBackgroundImageOverlay = cardBackgroundOverlay
