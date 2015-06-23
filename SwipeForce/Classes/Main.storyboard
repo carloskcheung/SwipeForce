@@ -177,11 +177,16 @@
                                                 <gestureRecognizers/>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="f5O-lw-Q13" appends="YES" id="ZIZ-61-vzZ"/>
+                                                    <outletCollection property="gestureRecognizers" destination="q0K-IU-SuT" appends="YES" id="24H-hv-JGW"/>
                                                 </connections>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="list_view_nav" id="9nv-wI-GqF">
                                                 <rect key="frame" x="143" y="30" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Fd1-w1-EwL" appends="YES" id="yxj-IM-GHg"/>
+                                                </connections>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="account_view_nav_selected-2" id="pXe-XC-TSk">
                                                 <rect key="frame" x="267" y="30" width="35" height="35"/>
@@ -196,6 +201,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vlc-nj-3NL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="f5O-lw-Q13">
@@ -203,8 +209,18 @@
                         <action selector="onTap:" destination="YG1-BM-5Bi" id="saF-CT-R1Y"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="q0K-IU-SuT">
+                    <connections>
+                        <segue destination="fKJ-2s-RcM" kind="modal" modalPresentationStyle="fullScreen" animates="NO" id="AIP-si-5Ne"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Fd1-w1-EwL">
+                    <connections>
+                        <segue destination="6ou-LX-4Io" kind="modal" animates="NO" id="w9T-CC-D37"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-717.86666666666667" y="-1020.5066666666667"/>
+            <point key="canvasLocation" x="-742" y="-1033"/>
         </scene>
         <!--Main Card View Controller-->
         <scene sceneID="m6t-bl-3Gd">
@@ -358,6 +374,7 @@
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="m3L-o1-Pfo" appends="YES" id="aqN-ld-Mbs"/>
+                                    <outletCollection property="gestureRecognizers" destination="a9e-F0-Bc9" appends="YES" id="MDu-rt-zsx"/>
                                 </connections>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" id="D4Y-cK-l16" userLabel="Third Card View">
@@ -488,6 +505,7 @@
                                 <color key="backgroundColor" red="1" green="0.2116514488" blue="0.1764744925" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="m3L-o1-Pfo" appends="YES" id="Hyo-l0-eTx"/>
+                                    <outletCollection property="gestureRecognizers" destination="a9e-F0-Bc9" appends="YES" id="QyN-Kt-LrC"/>
                                 </connections>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" id="oNS-e0-Yfl" userLabel="Second Card View">
@@ -566,7 +584,7 @@
                                                 <rect key="frame" x="106" y="23" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMM-s3-3C5" userLabel="Lead Name">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Card Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMM-s3-3C5" userLabel="Lead Name">
                                                 <rect key="frame" x="18" y="129" width="277" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -697,7 +715,7 @@
                                                 <rect key="frame" x="98" y="23" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="okO-ZR-pDq" userLabel="Lead Name">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Card Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="okO-ZR-pDq" userLabel="Lead Name">
                                                 <rect key="frame" x="10" y="129" width="277" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -914,7 +932,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1120" y="-356"/>
+            <point key="canvasLocation" x="-1244" y="-356"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Bd8-Dy-5w5">
@@ -1200,7 +1218,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="iCh-x7-vdM"/>
             </objects>
-            <point key="canvasLocation" x="-484.80000000000001" y="-355.94666666666666"/>
+            <point key="canvasLocation" x="-1713" y="408"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="yRb-wb-dlX">
@@ -1222,6 +1240,9 @@
                                         <rect key="frame" x="18" y="30" width="35" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hgd-Z3-U1Y" appends="YES" id="agc-6Z-AtD"/>
+                                        </connections>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="list_view_nav_selected-2" id="hhL-CP-8Ur">
                                         <rect key="frame" x="143" y="30" width="35" height="35"/>
@@ -1231,6 +1252,9 @@
                                         <rect key="frame" x="267" y="30" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="KRv-RF-JOw" appends="YES" id="OXt-U8-JeV"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </view>
@@ -1390,6 +1414,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bAD-ql-UsJ"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="acceptButton" destination="akP-MX-YYa" id="Der-zn-An8"/>
                         <outlet property="acceptGreenIcon" destination="xxq-mY-asK" id="84k-sr-xao"/>
@@ -1407,8 +1432,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zut-iB-gDv" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hgd-Z3-U1Y">
+                    <connections>
+                        <segue destination="fKJ-2s-RcM" kind="modal" animates="NO" id="aLp-Xr-5JF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KRv-RF-JOw">
+                    <connections>
+                        <segue destination="YG1-BM-5Bi" kind="modal" animates="NO" id="Z90-8f-pYw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-343" y="424"/>
+            <point key="canvasLocation" x="-742" y="-356"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TeA-3H-wnb">
@@ -1426,7 +1461,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGb-tJ-Png" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-796" y="424"/>
+            <point key="canvasLocation" x="-1244" y="416"/>
         </scene>
     </scenes>
     <resources>
@@ -1469,4 +1504,9 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="AIP-si-5Ne"/>
+        <segue reference="Z90-8f-pYw"/>
+        <segue reference="w9T-CC-D37"/>
+    </inferredMetricsTieBreakers>
 </document>

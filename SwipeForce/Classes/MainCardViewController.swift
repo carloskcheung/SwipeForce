@@ -109,9 +109,14 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     var cardAcceptedImage: [UIImageView]!
     var cardRejectedImage: [UIImageView]!
     var cardLaterImage: [UIImageView]!
-    
-    
-    
+    var cardTitleLabel: [UILabel]!
+    var cardCompanyLabel: [UILabel]!
+    var cardCityLabel: [UILabel]!
+    var cardStateLabel: [UILabel]!
+    var cardEmailLabel: [UILabel]!
+    var cardSourceLabel: [UILabel]!
+    var cardStatusLabel: [UILabel]!
+    var cardNameLabel: [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -151,7 +156,15 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         cardAcceptedImage = [firstCardAcceptedImage, secondCardAcceptedImage, thirdCardAccptedImage, fourthCardAcceptedImage]
         cardRejectedImage = [firstCardRejectedImage, secondCardRejectedImage, thirdCardRejectedImage, fourthCardRejectedImage]
         cardLaterImage = [firstCardLaterImage, secondCardLaterImage, thirdCardLaterImage, fourthCardLaterImage]
-        
+        cardTitleLabel = [firstCardTitleLabel, secondCardTitleLabel, thirdCardTitleLabel, fourthCardTitleLabel]
+        cardCompanyLabel = [firstCardCompanyLabel, secondCardCompanyLabel, thirdCardCompanyLabel, fourthCardCompanyLabel]
+        cardCityLabel = [firstCardCityLabel, secondCardCityLabel, thirdCardCityLabel, fourthCardCityLabel]
+        cardStateLabel = [firstCardStateLabel, secondCardStateLabel, thirdCardStateLabel, fourthCardStateLabel]
+        cardEmailLabel = [firstCardEmailLabel, secondCardEmailLabel, thirdCardEmailLabel, fourthCardEmailLabel]
+        cardSourceLabel = [firstCardSourceLabel, secondCardSourceLabel, thirdCardSourceLabel, fourthCardSourceLabel]
+        cardStatusLabel = [firstCardStatusLabel, secondCardStatusLabel, thirdCardStatusLabel, fourthCardStatusLabel]
+        cardNameLabel = [firstCardNameLabel, secondCardNameLabel, thirdCardNameLabel, fourthCardNameLabel]
+
         cardOverlay[0].alpha = 0
         cardAcceptedImage[0].hidden == true
         cardRejectedImage[0].hidden == true
@@ -300,7 +313,23 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                 
                 var topCardLaterImage = self.cardLaterImage.removeAtIndex(0)
                 self.cardLaterImage.append(topCardLaterImage)
-                                
+            
+                var topCardTitleLabel = self.cardTitleLabel.removeAtIndex(0)
+                self.cardTitleLabel.append(topCardTitleLabel)
+                var topCardCompanyLabel = self.cardCompanyLabel.removeAtIndex(0)
+                self.cardCompanyLabel.append(topCardCompanyLabel)
+                var topCardCityLabel = self.cardCityLabel.removeAtIndex(0)
+                self.cardCityLabel.append(topCardCityLabel)
+                var topCardStateLabel = self.cardStateLabel.removeAtIndex(0)
+                self.cardStateLabel.append(topCardStateLabel)
+                var topCardEmailLabel = self.cardEmailLabel.removeAtIndex(0)
+                self.cardEmailLabel.append(topCardEmailLabel)
+                var topCardSourceLabel = self.cardSourceLabel.removeAtIndex(0)
+                self.cardSourceLabel.append(topCardSourceLabel)
+                var topCardStatusLabel = self.cardStatusLabel.removeAtIndex(0)
+                self.cardStatusLabel.append(topCardStatusLabel)
+                var topCardNameLabel = self.cardNameLabel.removeAtIndex(0)
+                self.cardNameLabel.append(topCardNameLabel)
         })
     }
     
@@ -391,6 +420,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
             var detailVC = segue!.destinationViewController as! DetailViewController;
+            detailVC.passName = cardNameLabel[0].text
             detailVC.passPhoto = photoImage.image
             detailVC.passColor = cardBackground.backgroundColor
             detailVC.passBackgroundImageOverlay = cardBackgroundOverlay
