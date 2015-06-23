@@ -390,7 +390,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         if (segue.identifier == "card2DetailSegue") {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
-            var detailVC = segue!.destinationViewController as! DetailViewController;
+            var detailVC = segue!.destinationViewController as DetailViewController;
             detailVC.passPhoto = photoImage.image
             detailVC.passColor = cardBackground.backgroundColor
             detailVC.passBackgroundImageOverlay = cardBackgroundOverlay
