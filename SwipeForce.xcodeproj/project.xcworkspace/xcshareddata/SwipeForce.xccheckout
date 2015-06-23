@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4F5E9C59-6CFD-40D1-9B69-51DA5E440703</string>
+	<string>8D316EBC-D8CB-4DD3-9D11-EE92D6B3534A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SwipeForce</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>AD3F037B81034351779A054C3E4A6C3AAE070A93</key>
-		<string>github.com:carloskcheung/SwipeForce.git</string>
+		<string>https://github.com/carloskcheung/SwipeForce.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SwipeForce.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:carloskcheung/SwipeForce.git</string>
+	<string>https://github.com/carloskcheung/SwipeForce.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

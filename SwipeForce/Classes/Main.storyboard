@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fKJ-2s-RcM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fKJ-2s-RcM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Accounts-->
@@ -15,8 +15,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" id="nWk-eM-kfI">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nWk-eM-kfI" id="F0o-ef-2hE">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -181,7 +183,7 @@
                                                 <rect key="frame" x="143" y="30" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="account_view_nav_selected" id="pXe-XC-TSk">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="account_view_nav_selected-2" id="pXe-XC-TSk">
                                                 <rect key="frame" x="267" y="30" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
@@ -232,6 +234,70 @@
                                 <rect key="frame" x="38" y="75" width="244" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="1du-Kk-5D9" userLabel="Card Bottom">
+                                        <rect key="frame" x="0.0" y="200" width="296" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sr. Innovation Manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rFk-V0-2vV" userLabel="titleLabel">
+                                                <rect key="frame" x="12" y="13" width="186" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Pennsylvania" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MnD-5r-Ice" userLabel="companyLabel">
+                                                <rect key="frame" x="12" y="33" width="271" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philadelphia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QWd-mA-bas" userLabel="cityLabel">
+                                                <rect key="frame" x="12" y="53" width="109" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pennsylvania" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n3M-Av-cFm" userLabel="stateLabel">
+                                                <rect key="frame" x="162" y="53" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G1s-PT-hbm" userLabel="emailLabel">
+                                                <rect key="frame" x="12" y="72" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7QU-pR-GCX" userLabel="sourceLabel">
+                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o0Y-sV-b9W" userLabel="statusLabel">
+                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter Grey" id="SUl-Dx-lQ0">
+                                                <rect key="frame" x="201" y="100" width="14" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Grey" id="MJs-Oh-FwC">
+                                                <rect key="frame" x="71" y="101" width="14" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" id="EHa-Ax-RXZ" userLabel="Card Background">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -298,6 +364,70 @@
                                 <rect key="frame" x="30" y="82" width="260" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="M4C-iv-YXw" userLabel="Card Bottom">
+                                        <rect key="frame" x="0.0" y="200" width="296" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sr. Innovation Manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kHJ-6t-yeW" userLabel="titleLabel">
+                                                <rect key="frame" x="12" y="13" width="186" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Pennsylvania" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PFt-gG-cAo" userLabel="companyLabel">
+                                                <rect key="frame" x="12" y="33" width="271" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philadelphia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NJC-So-c7q" userLabel="cityLabel">
+                                                <rect key="frame" x="12" y="53" width="109" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pennsylvania" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="azV-YD-pJl" userLabel="stateLabel">
+                                                <rect key="frame" x="162" y="53" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z3g-V3-g3c" userLabel="emailLabel">
+                                                <rect key="frame" x="12" y="72" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AEh-6o-Icr" userLabel="sourceLabel">
+                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hii-zF-3xR" userLabel="statusLabel">
+                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter Grey" id="6fy-UA-qPy">
+                                                <rect key="frame" x="201" y="100" width="14" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Grey" id="tvt-Xq-N7I">
+                                                <rect key="frame" x="71" y="101" width="14" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" id="sJw-Nf-EAu" userLabel="Card Background">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -364,6 +494,70 @@
                                 <rect key="frame" x="20" y="91" width="280" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="icD-3s-0xU" userLabel="Card Bottom">
+                                        <rect key="frame" x="0.0" y="200" width="296" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sr. Innovation Manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Ox-KJ-UUB" userLabel="titleLabel">
+                                                <rect key="frame" x="12" y="13" width="186" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Pennsylvania" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q9b-JE-joP" userLabel="companyLabel">
+                                                <rect key="frame" x="12" y="33" width="271" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philadelphia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wGT-M4-fyC" userLabel="cityLabel">
+                                                <rect key="frame" x="12" y="53" width="109" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pennsylvania" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a2Y-uN-jhb" userLabel="stateLabel">
+                                                <rect key="frame" x="162" y="53" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pej-lp-rf6" userLabel="emailLabel">
+                                                <rect key="frame" x="12" y="72" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M9c-kB-O0z" userLabel="sourceLabel">
+                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oCi-uS-PrH" userLabel="statusLabel">
+                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter Grey" id="6CN-ic-29s">
+                                                <rect key="frame" x="201" y="100" width="14" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Grey" id="nHZ-0y-I8D">
+                                                <rect key="frame" x="71" y="101" width="14" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" id="VIa-en-cTU" userLabel="Card Background">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -431,16 +625,80 @@
                                 <rect key="frame" x="12" y="100" width="296" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="DSS-nl-cuP" userLabel="Card Bottom">
+                                        <rect key="frame" x="0.0" y="200" width="296" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sr. Innovation Manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s0U-Bl-qUw" userLabel="titleLabel">
+                                                <rect key="frame" x="12" y="13" width="186" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Pennsylvania" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VCm-f1-GKo" userLabel="companyLabel">
+                                                <rect key="frame" x="12" y="33" width="271" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philadelphia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vi6-wH-p81" userLabel="cityLabel">
+                                                <rect key="frame" x="12" y="53" width="109" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pennsylvania" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ddI-7T-VWb" userLabel="stateLabel">
+                                                <rect key="frame" x="162" y="53" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GfI-hT-DGb" userLabel="emailLabel">
+                                                <rect key="frame" x="12" y="72" width="117" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0o4-i2-RKR" userLabel="sourceLabel">
+                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hg4-ap-q8S" userLabel="statusLabel">
+                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter Grey" id="wQS-W7-HeZ">
+                                                <rect key="frame" x="201" y="100" width="14" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Grey" id="40z-VI-zbh">
+                                                <rect key="frame" x="71" y="101" width="14" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" id="QzC-jn-71V" userLabel="Card Background">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" id="KLX-Yn-ULj" userLabel="Photo Image">
-                                                <rect key="frame" x="106" y="23" width="100" height="100"/>
+                                                <rect key="frame" x="98" y="23" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="okO-ZR-pDq" userLabel="Lead Name">
-                                                <rect key="frame" x="18" y="129" width="277" height="21"/>
+                                                <rect key="frame" x="10" y="129" width="277" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -528,7 +786,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card_view_nav_selected" id="5Tp-xC-O48">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card_view_nav_selected-2" id="5Tp-xC-O48">
                                         <rect key="frame" x="18" y="30" width="35" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -562,29 +820,60 @@
                         <outlet property="cardBackgroundView" destination="iaM-Ja-Vj0" id="iwZ-f8-xGM"/>
                         <outlet property="firstCard" destination="DS1-4x-aHt" id="AFe-DH-UZS"/>
                         <outlet property="firstCardAcceptedImage" destination="0eg-SC-CLm" id="FRx-Qx-Awa"/>
+                        <outlet property="firstCardCityLabel" destination="Vi6-wH-p81" id="5yw-Al-bZ6"/>
+                        <outlet property="firstCardCompanyLabel" destination="VCm-f1-GKo" id="4gs-Qp-tw7"/>
+                        <outlet property="firstCardEmailLabel" destination="GfI-hT-DGb" id="2K9-Cj-DCX"/>
                         <outlet property="firstCardLaterImage" destination="2Nt-Ro-2bt" id="xJi-zW-LAn"/>
+                        <outlet property="firstCardNameLabel" destination="okO-ZR-pDq" id="9yG-Rd-Gn5"/>
                         <outlet property="firstCardOverlay" destination="tuN-2B-hag" id="4ES-Fu-IIz"/>
                         <outlet property="firstCardRejectedImage" destination="44d-ai-SUp" id="ufT-sf-jRg"/>
+                        <outlet property="firstCardSourceLabel" destination="0o4-i2-RKR" id="yRD-g2-PuO"/>
+                        <outlet property="firstCardStateLabel" destination="ddI-7T-VWb" id="uaM-Zc-vdd"/>
+                        <outlet property="firstCardStatusLabel" destination="hg4-ap-q8S" id="R1m-nq-4hg"/>
+                        <outlet property="firstCardTitleLabel" destination="s0U-Bl-qUw" id="yif-Nh-Fk8"/>
                         <outlet property="fourthCard" destination="vgL-71-leU" id="uEV-UZ-udW"/>
                         <outlet property="fourthCardAcceptedImage" destination="fT8-qP-KeD" id="H0h-6M-pgI"/>
+                        <outlet property="fourthCardCityLabel" destination="QWd-mA-bas" id="nQn-6f-S37"/>
+                        <outlet property="fourthCardCompanyLabel" destination="MnD-5r-Ice" id="jNq-dn-Ejn"/>
+                        <outlet property="fourthCardEmailLabel" destination="G1s-PT-hbm" id="uNv-RM-6Cb"/>
                         <outlet property="fourthCardLaterImage" destination="F0c-Co-HON" id="uqg-fN-7Kb"/>
+                        <outlet property="fourthCardNameLabel" destination="cAa-JV-qBo" id="HD8-8j-MLS"/>
                         <outlet property="fourthCardOverlay" destination="nCH-n2-wr2" id="Wm5-r5-hGy"/>
                         <outlet property="fourthCardRejectedImage" destination="jYx-WS-xuQ" id="Oam-2B-63E"/>
+                        <outlet property="fourthCardSourceLabel" destination="7QU-pR-GCX" id="AUN-IS-eNz"/>
+                        <outlet property="fourthCardStateLabel" destination="n3M-Av-cFm" id="IMc-aH-1dW"/>
+                        <outlet property="fourthCardStatusLabel" destination="o0Y-sV-b9W" id="wNZ-uv-Drt"/>
+                        <outlet property="fourthCardTitleLabel" destination="rFk-V0-2vV" id="VIF-NV-CPF"/>
                         <outlet property="labelLabel" destination="Mlw-FH-37p" id="1e8-qw-yJm"/>
                         <outlet property="labelView" destination="i5f-rC-I5b" id="3r7-dc-VWI"/>
-                        <outlet property="nameLabel" destination="okO-ZR-pDq" id="AfH-r6-T73"/>
                         <outlet property="photoImage" destination="KLX-Yn-ULj" id="HVe-u4-pKb"/>
                         <outlet property="secondCard" destination="oNS-e0-Yfl" id="qmi-L4-rfV"/>
                         <outlet property="secondCardAcceptedImage" destination="Y0P-vR-VUl" id="owV-Go-myL"/>
+                        <outlet property="secondCardCityLabel" destination="wGT-M4-fyC" id="QUa-Fw-Rtc"/>
+                        <outlet property="secondCardCompanyLabel" destination="q9b-JE-joP" id="HxU-4u-rt8"/>
+                        <outlet property="secondCardEmailLabel" destination="Pej-lp-rf6" id="G4u-Qe-EkF"/>
                         <outlet property="secondCardLaterImage" destination="fdZ-uK-83f" id="YG3-k9-RFJ"/>
+                        <outlet property="secondCardNameLabel" destination="UMM-s3-3C5" id="ak4-ab-SqK"/>
                         <outlet property="secondCardOverlay" destination="t4j-M0-QFh" id="lCD-BJ-39E"/>
                         <outlet property="secondCardRejectedImage" destination="gec-ib-1kJ" id="QeP-dh-Vwa"/>
+                        <outlet property="secondCardSourceLabel" destination="M9c-kB-O0z" id="9WD-A2-E0j"/>
+                        <outlet property="secondCardStateLabel" destination="a2Y-uN-jhb" id="id1-NA-W7C"/>
+                        <outlet property="secondCardStatusLabel" destination="oCi-uS-PrH" id="A0L-XI-lB9"/>
+                        <outlet property="secondCardTitleLabel" destination="7Ox-KJ-UUB" id="omQ-ya-6oM"/>
                         <outlet property="tagView" destination="tuN-2B-hag" id="llQ-uD-O5O"/>
                         <outlet property="thirdCard" destination="D4Y-cK-l16" id="Ymz-8A-SDn"/>
                         <outlet property="thirdCardAccptedImage" destination="WpL-Rs-Qed" id="cRs-oJ-umi"/>
+                        <outlet property="thirdCardCityLabel" destination="NJC-So-c7q" id="Efi-Fx-PeI"/>
+                        <outlet property="thirdCardCompanyLabel" destination="PFt-gG-cAo" id="gIz-tu-Ef3"/>
+                        <outlet property="thirdCardEmailLabel" destination="Z3g-V3-g3c" id="anw-WV-siD"/>
                         <outlet property="thirdCardLaterImage" destination="CS8-zt-8aa" id="grF-6j-qRc"/>
+                        <outlet property="thirdCardNameLabel" destination="Dmg-jj-w5B" id="461-nW-OxZ"/>
                         <outlet property="thirdCardOverlay" destination="z8d-iJ-vKD" id="6o3-si-NcH"/>
                         <outlet property="thirdCardRejectedImage" destination="nWQ-fI-58B" id="gzt-6f-WfN"/>
+                        <outlet property="thirdCardSourceLabel" destination="AEh-6o-Icr" id="cDt-jz-EUs"/>
+                        <outlet property="thirdCardStateLabel" destination="azV-YD-pJl" id="NgM-GL-FDl"/>
+                        <outlet property="thirdCardStatusLabel" destination="Hii-zF-3xR" id="ru2-TG-bsP"/>
+                        <outlet property="thirdCardTitleLabel" destination="kHJ-6t-yeW" id="ALh-Xi-Hgr"/>
                         <segue destination="Ll8-Kf-798" kind="modal" identifier="card2DetailSegue" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="QzH-jS-Pl3"/>
                     </connections>
                 </viewController>
@@ -934,7 +1223,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="list_view_nav_selected" id="hhL-CP-8Ur">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="list_view_nav_selected-2" id="hhL-CP-8Ur">
                                         <rect key="frame" x="143" y="30" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1150,8 +1439,10 @@
         <image name="Checkmark Copy" width="9" height="8"/>
         <image name="Checkmark White" width="9" height="8"/>
         <image name="Filter" width="14" height="16"/>
+        <image name="Filter Grey" width="14" height="16"/>
         <image name="Home" width="14" height="14"/>
         <image name="Key" width="14" height="14"/>
+        <image name="Key Grey" width="14" height="14"/>
         <image name="Later" width="46" height="46"/>
         <image name="Later Status" width="106" height="158"/>
         <image name="Later_Icon" width="9" height="9"/>
@@ -1166,11 +1457,11 @@
         <image name="Write_button" width="13" height="13"/>
         <image name="X Copy 2" width="8" height="8"/>
         <image name="account_view_nav" width="35" height="35"/>
-        <image name="account_view_nav_selected" width="35" height="35"/>
+        <image name="account_view_nav_selected-2" width="35" height="35"/>
         <image name="card_view_nav" width="35" height="34"/>
-        <image name="card_view_nav_selected" width="35" height="34"/>
+        <image name="card_view_nav_selected-2" width="35" height="34"/>
         <image name="list_view_nav" width="35" height="35"/>
-        <image name="list_view_nav_selected" width="35" height="35"/>
+        <image name="list_view_nav_selected-2" width="35" height="35"/>
         <image name="profile_image" width="75" height="63"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

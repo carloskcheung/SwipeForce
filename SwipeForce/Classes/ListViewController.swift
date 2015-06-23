@@ -78,7 +78,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as ListCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as! ListCell
         
         if listSelect == 1 {
             cell.nameLabel.text = namesLater[indexPath.row]
