@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" id="nWk-eM-kfI">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nWk-eM-kfI" id="F0o-ef-2hE">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -832,12 +832,12 @@
                     <navigationItem key="navigationItem" id="My6-L5-6HL"/>
                     <connections>
                         <outlet property="actionButtonsView" destination="Lhu-L3-CM6" id="ugl-YE-1az"/>
-                        <outlet property="cardBackground" destination="QzC-jn-71V" id="HNb-j1-gO8"/>
+                        <outlet property="backgroundView" destination="iaM-Ja-Vj0" id="4mp-UR-RxI"/>
                         <outlet property="cardBackgroundImage" destination="IdO-K1-ujQ" id="Kpe-p8-D55"/>
                         <outlet property="cardBackgroundOverlay" destination="uqU-EL-gBd" id="gK5-d7-mYW"/>
-                        <outlet property="cardBackgroundView" destination="iaM-Ja-Vj0" id="iwZ-f8-xGM"/>
                         <outlet property="firstCard" destination="DS1-4x-aHt" id="AFe-DH-UZS"/>
                         <outlet property="firstCardAcceptedImage" destination="0eg-SC-CLm" id="FRx-Qx-Awa"/>
+                        <outlet property="firstCardBackgroundView" destination="QzC-jn-71V" id="tXN-XS-IP2"/>
                         <outlet property="firstCardCityLabel" destination="Vi6-wH-p81" id="5yw-Al-bZ6"/>
                         <outlet property="firstCardCompanyLabel" destination="VCm-f1-GKo" id="4gs-Qp-tw7"/>
                         <outlet property="firstCardEmailLabel" destination="GfI-hT-DGb" id="2K9-Cj-DCX"/>
@@ -851,6 +851,7 @@
                         <outlet property="firstCardTitleLabel" destination="s0U-Bl-qUw" id="yif-Nh-Fk8"/>
                         <outlet property="fourthCard" destination="vgL-71-leU" id="uEV-UZ-udW"/>
                         <outlet property="fourthCardAcceptedImage" destination="fT8-qP-KeD" id="H0h-6M-pgI"/>
+                        <outlet property="fourthCardBackgroundView" destination="EHa-Ax-RXZ" id="DQB-40-4Gi"/>
                         <outlet property="fourthCardCityLabel" destination="QWd-mA-bas" id="nQn-6f-S37"/>
                         <outlet property="fourthCardCompanyLabel" destination="MnD-5r-Ice" id="jNq-dn-Ejn"/>
                         <outlet property="fourthCardEmailLabel" destination="G1s-PT-hbm" id="uNv-RM-6Cb"/>
@@ -867,6 +868,7 @@
                         <outlet property="photoImage" destination="KLX-Yn-ULj" id="HVe-u4-pKb"/>
                         <outlet property="secondCard" destination="oNS-e0-Yfl" id="qmi-L4-rfV"/>
                         <outlet property="secondCardAcceptedImage" destination="Y0P-vR-VUl" id="owV-Go-myL"/>
+                        <outlet property="secondCardBackgroundView" destination="VIa-en-cTU" id="RfY-37-TeB"/>
                         <outlet property="secondCardCityLabel" destination="wGT-M4-fyC" id="QUa-Fw-Rtc"/>
                         <outlet property="secondCardCompanyLabel" destination="q9b-JE-joP" id="HxU-4u-rt8"/>
                         <outlet property="secondCardEmailLabel" destination="Pej-lp-rf6" id="G4u-Qe-EkF"/>
@@ -881,6 +883,7 @@
                         <outlet property="tagView" destination="tuN-2B-hag" id="llQ-uD-O5O"/>
                         <outlet property="thirdCard" destination="D4Y-cK-l16" id="Ymz-8A-SDn"/>
                         <outlet property="thirdCardAccptedImage" destination="WpL-Rs-Qed" id="cRs-oJ-umi"/>
+                        <outlet property="thirdCardBackgroundView" destination="sJw-Nf-EAu" id="ndP-cq-8e2"/>
                         <outlet property="thirdCardCityLabel" destination="NJC-So-c7q" id="Efi-Fx-PeI"/>
                         <outlet property="thirdCardCompanyLabel" destination="PFt-gG-cAo" id="gIz-tu-Ef3"/>
                         <outlet property="thirdCardEmailLabel" destination="Z3g-V3-g3c" id="anw-WV-siD"/>
@@ -1506,7 +1509,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="AIP-si-5Ne"/>
-        <segue reference="Z90-8f-pYw"/>
-        <segue reference="w9T-CC-D37"/>
+        <segue reference="Ddz-5Y-wUJ"/>
+        <segue reference="Cz9-VL-Bbw"/>
     </inferredMetricsTieBreakers>
 </document>
