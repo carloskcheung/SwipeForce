@@ -9,18 +9,18 @@
 import Foundation
 
 struct LeadModel {
-    var sfdcid: String
-    var name: String
-    var email: String
-    var company: String
-    var phone: String
-    var fax: String
-    var mobilephone: String
-    var title: String
-    var leadsource: String
-    var createddate: String
-    var status: String
-    var city: String
-    var state: String
-    var lastactivitydate: String
+    var sfdcid: String!
+    var name: String!
+    var email: String!
+    var company: String!
+    var phone: String!
+    var fax: String!
+    var mobilephone: String!
+    var title: String!
+    var leadsource: String!
+    var createddate: String!
+    var status: String!
+    var city: String!
+    var state: String!
+    var lastactivitydate: String!
 }

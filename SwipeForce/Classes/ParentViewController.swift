@@ -20,7 +20,7 @@ class ParentViewController: UIViewController, SFRestDelegate {
         super.viewDidLoad()
 
         let restAPI = SFRestAPI.sharedInstance()
-        let request = restAPI.requestForQuery("SELECT Id, Name, Email, Status, Company, Phone, Fax, MobilePhone, Title, LeadSource, CreatedDate, City, State, LastActivityDate FROM Lead ORDER BY Name LIMIT 1")
+        let request = restAPI.requestForQuery("SELECT Id, Name, Email, Status, Company, Phone, Fax, MobilePhone, Title, LeadSource, CreatedDate, City, State, LastActivityDate FROM Lead ORDER BY Name LIMIT 20")
         // OFFSET 20 --> SQL nth query look it up -- when you finish 20 you get more
 
         SendClass.doThatThing(request, withDelegate: self)
@@ -52,14 +52,12 @@ class ParentViewController: UIViewController, SFRestDelegate {
                 var state = record.objectForKey("State") as? String
                 var lastactivitydate = record.objectForKey("LastActivityDate") as? String
                 
-                if ((sfdcid != nil) && (name != nil)) {
-                   allCardData.append(LeadModel(sfdcid: sfdcid!, name: name!, email: email!, company: company!, phone: phone!, fax: fax!, mobilephone: mobilephone!, title: title!, leadsource: leadsource!, createddate: createddate!, status: status!, city: city!, state: state!, lastactivitydate: lastactivitydate!))
-                    
-                    
-                    
-                }
                 
-            println("Card data \(allCardData[1]) !")
+                var lead = LeadModel(sfdcid: sfdcid, name: name, email: email, company: company, phone: phone, fax: fax, mobilephone: mobilephone, title: title, leadsource: leadsource, createddate: createddate, status: status, city: city, state: state, lastactivitydate: lastactivitydate)
+                allCardData.append(lead)
+                
+                
+                println("Card data \(record) !")
                 
             }
         }
