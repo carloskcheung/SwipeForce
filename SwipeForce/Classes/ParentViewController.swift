@@ -100,7 +100,7 @@ class ParentViewController: UIViewController, SFRestDelegate {
         
            if (segue.identifier == "load2MainCardSegue") {
             var cardVC = segue.destinationViewController as! MainCardViewController
-            cardVC.cardData = allCardData[index]
+            cardVC.parent = self
             
             }
     }

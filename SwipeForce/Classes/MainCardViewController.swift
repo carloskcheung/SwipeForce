@@ -11,7 +11,14 @@ import UIKit
 class MainCardViewController: UIViewController, SFRestDelegate {
     
     //CARLOS
-    var cardData: LeadModel!
+    var cardData: LeadModel {
+        return parent.allCardData[parent.index]
+    }
+    var nextCardData: LeadModel {
+        // TODO check before assigning
+        return parent.allCardData[parent.index + 1]
+    }
+    var parent : ParentViewController!
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var cardBackgroundOverlay: UIView!
@@ -181,6 +188,93 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         cardBackgroundOverlay.alpha = 0.3
         
 // need to adjust to correct labels in maincardview
+//        reloadCards()
+        cardSwitch()
+    }
+    
+    
+    func cardSwitch(){
+        switch cards[0]{
+        case firstCard:
+            firstCardNameLabel.text = cardData.name
+            firstCardEmailLabel.text = cardData.email
+            firstCardTitleLabel.text = cardData.title
+            firstCardCompanyLabel.text = cardData.company
+            firstCardCityLabel.text = cardData.city
+            firstCardStateLabel.text = cardData.state
+            firstCardSourceLabel.text = cardData.leadsource
+            firstCardStatusLabel.text = cardData.status
+            //second card
+            secondCardNameLabel.text = nextCardData.name
+            secondCardEmailLabel.text = nextCardData.email
+            secondCardTitleLabel.text = nextCardData.title
+            secondCardCompanyLabel.text = nextCardData.company
+            secondCardCityLabel.text = nextCardData.city
+            secondCardStateLabel.text = nextCardData.state
+            secondCardSourceLabel.text = nextCardData.leadsource
+            secondCardStatusLabel.text = nextCardData.status
+        case secondCard:
+            secondCardNameLabel.text = cardData.name
+            secondCardEmailLabel.text = cardData.email
+            secondCardTitleLabel.text = cardData.title
+            secondCardCompanyLabel.text = cardData.company
+            secondCardCityLabel.text = cardData.city
+            secondCardStateLabel.text = cardData.state
+            secondCardSourceLabel.text = cardData.leadsource
+            secondCardStatusLabel.text = cardData.status
+            //third card
+            thirdCardNameLabel.text = nextCardData.name
+            thirdCardEmailLabel.text = nextCardData.email
+            thirdCardTitleLabel.text = nextCardData.title
+            thirdCardCompanyLabel.text = nextCardData.company
+            thirdCardCityLabel.text = nextCardData.city
+            thirdCardStateLabel.text = nextCardData.state
+            thirdCardSourceLabel.text = nextCardData.leadsource
+            thirdCardStatusLabel.text = nextCardData.status
+        case thirdCard:
+            thirdCardNameLabel.text = cardData.name
+            thirdCardEmailLabel.text = cardData.email
+            thirdCardTitleLabel.text = cardData.title
+            thirdCardCompanyLabel.text = cardData.company
+            thirdCardCityLabel.text = cardData.city
+            thirdCardStateLabel.text = cardData.state
+            thirdCardSourceLabel.text = cardData.leadsource
+            thirdCardStatusLabel.text = cardData.status
+            //fourth card
+            fourthCardNameLabel.text = nextCardData.name
+            fourthCardEmailLabel.text = nextCardData.email
+            fourthCardTitleLabel.text = nextCardData.title
+            fourthCardCompanyLabel.text = nextCardData.company
+            fourthCardCityLabel.text = nextCardData.city
+            fourthCardStateLabel.text = nextCardData.state
+            fourthCardSourceLabel.text = nextCardData.leadsource
+            fourthCardStatusLabel.text = nextCardData.status
+            
+        case fourthCard:
+            fourthCardNameLabel.text = cardData.name
+            fourthCardEmailLabel.text = cardData.email
+            fourthCardTitleLabel.text = cardData.title
+            fourthCardCompanyLabel.text = cardData.company
+            fourthCardCityLabel.text = cardData.city
+            fourthCardStateLabel.text = cardData.state
+            fourthCardSourceLabel.text = cardData.leadsource
+            fourthCardStatusLabel.text = cardData.status
+            //first card
+            firstCardNameLabel.text = nextCardData.name
+            firstCardEmailLabel.text = nextCardData.email
+            firstCardTitleLabel.text = nextCardData.title
+            firstCardCompanyLabel.text = nextCardData.company
+            firstCardCityLabel.text = nextCardData.city
+            firstCardStateLabel.text = nextCardData.state
+            firstCardSourceLabel.text = nextCardData.leadsource
+            firstCardStatusLabel.text = nextCardData.status
+            
+        default:
+            break
+        }
+    }
+    
+    func reloadCards() {
         firstCardNameLabel.text = cardData.name
         firstCardEmailLabel.text = cardData.email
         firstCardTitleLabel.text = cardData.title
@@ -286,6 +380,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                     }, completion: nil)
             }
             else if translation.x >= 100 && cards[0].center.y < 480 {
+                self.onDoneWithCard()
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     self.cards[0].center.x += self.view.bounds.width
                     }, completion: nil)
@@ -293,8 +388,10 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                     self.cards[0].transform = CGAffineTransformIdentity
                     self.animateCards()
                 }
+                
             }
             else if translation.x <= -100 && cards[0].center.y < 480 {
+                self.onDoneWithCard()
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     self.cards[0].center.x -= self.view.bounds.width
                     }, completion: nil)
@@ -302,8 +399,10 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                     self.cards[0].transform = CGAffineTransformIdentity
                     self.animateCards()
                 }
+                
             }
             else if cards[0].center.y > 480 {
+                self.onDoneWithCard()
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     self.cards[0].center.y += self.view.bounds.width
                     }, completion: nil)
@@ -311,8 +410,15 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                     self.cards[0].transform = CGAffineTransformIdentity
                     self.animateCards()
                 }
+                
             }
         }
+    }
+    
+    func onDoneWithCard() {
+        parent.index++
+        //reloadCards()
+        cardSwitch()
     }
     
     func animateCards() {
@@ -380,8 +486,10 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         
         delay(0.4) {
             self.cards[0].transform = CGAffineTransformIdentity
+            self.onDoneWithCard()
             self.animateCards()
         }
+        
     }
     
     @IBAction func onTapRejected(sender: UITapGestureRecognizer) {
@@ -399,9 +507,12 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             }, completion: nil)
         
         delay(0.4) {
+            
             self.cards[0].transform = CGAffineTransformIdentity
+            self.onDoneWithCard()
             self.animateCards()
         }
+       
     }
     
     @IBAction func onTapLater(sender: UITapGestureRecognizer) {
@@ -418,9 +529,11 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         
         delay(0.4) {
             self.cards[0].transform = CGAffineTransformIdentity
+            self.onDoneWithCard()
             self.animateCards()
             self.actionButtonsView.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0)
         }
+        
     }
     
     class func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
