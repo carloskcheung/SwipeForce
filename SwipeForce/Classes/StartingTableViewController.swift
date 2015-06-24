@@ -50,7 +50,7 @@ class StartingTableViewController: UITableViewController, SFRestDelegate {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BasicCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("BasicCell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = rowData?[indexPath.row].name
         

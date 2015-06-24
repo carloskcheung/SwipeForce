@@ -180,16 +180,44 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         cardBackgroundOverlay.backgroundColor = self.cardBackgroundView[0].backgroundColor
         cardBackgroundOverlay.alpha = 0.3
         
-        // need to adjust to correct labels in maincardview
-//        nameLabel.text = cardData.name
-//        emailLabel.text = cardData.email
-//        titleLabel.text = cardData.title
-//        companyLabel.text = cardData.company
-//        cityLabel.text = cardData.city
-//        stateLabel.text = cardData.state
-//        sourceLabel.text = cardData.leadsource
-//        statusLabel.text = cardData.status
-//        
+// need to adjust to correct labels in maincardview
+        firstCardNameLabel.text = cardData.name
+        firstCardEmailLabel.text = cardData.email
+        firstCardTitleLabel.text = cardData.title
+        firstCardCompanyLabel.text = cardData.company
+        firstCardCityLabel.text = cardData.city
+        firstCardStateLabel.text = cardData.state
+        firstCardSourceLabel.text = cardData.leadsource
+        firstCardStatusLabel.text = cardData.status
+        
+        
+        secondCardNameLabel.text = cardData.name
+        secondCardEmailLabel.text = cardData.email
+        secondCardTitleLabel.text = cardData.title
+        secondCardCompanyLabel.text = cardData.company
+        secondCardCityLabel.text = cardData.city
+        secondCardStateLabel.text = cardData.state
+        secondCardSourceLabel.text = cardData.leadsource
+        secondCardStatusLabel.text = cardData.status
+        
+        
+        thirdCardNameLabel.text = cardData.name
+        thirdCardEmailLabel.text = cardData.email
+        thirdCardTitleLabel.text = cardData.title
+        thirdCardCompanyLabel.text = cardData.company
+        thirdCardCityLabel.text = cardData.city
+        thirdCardStateLabel.text = cardData.state
+        thirdCardSourceLabel.text = cardData.leadsource
+        thirdCardStatusLabel.text = cardData.status
+        
+        fourthCardNameLabel.text = cardData.name
+        fourthCardEmailLabel.text = cardData.email
+        fourthCardTitleLabel.text = cardData.title
+        fourthCardCompanyLabel.text = cardData.company
+        fourthCardCityLabel.text = cardData.city
+        fourthCardStateLabel.text = cardData.state
+        fourthCardSourceLabel.text = cardData.leadsource
+        fourthCardStatusLabel.text = cardData.status
     }
     
     func progressValue(value: CGFloat, refValueMin: CGFloat, refValueMax: CGFloat, convertValueMin: CGFloat, convertValueMax: CGFloat) -> CGFloat {
@@ -411,24 +439,16 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         performSegueWithIdentifier("card2DetailSegue", sender: nil)
     }
     
-    
-    // CARLOS MARK: - IBAction Methods -- LOGOUT
-    
-    @IBAction func logoutButtonPressed(sender: AnyObject) {
-        SFAuthenticationManager.sharedManager().logoutAllUsers()
-    }
+
     
     
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "card2DetailSegue") {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
-<<<<<<< HEAD
-            var detailVC = segue!.destinationViewController as DetailViewController;
-=======
+
             var detailVC = segue!.destinationViewController as! DetailViewController;
             detailVC.passName = cardNameLabel[0].text
->>>>>>> 7d03e609fe5f4b7653fd632bb685b650155fe8c9
             detailVC.passPhoto = photoImage.image
             detailVC.passColor = cardBackgroundView[0].backgroundColor
             detailVC.passBackgroundImageOverlay = cardBackgroundOverlay

@@ -50,6 +50,7 @@
 		864D45D81B3921AA00E4F465 /* LeadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D45D31B3921AA00E4F465 /* LeadModel.swift */; };
 		864D45DB1B3921BA00E4F465 /* SendClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 864D45DA1B3921BA00E4F465 /* SendClass.m */; };
 		864D45DD1B39227E00E4F465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864D45DC1B39227E00E4F465 /* Main.storyboard */; };
+		86731F2B1B3A268500ED25CB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86731F2A1B3A268500ED25CB /* AccountViewController.swift */; };
 		86B91BFC1B3928DF000E3221 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B91BFB1B3928DF000E3221 /* Common.swift */; };
 		86B91C001B39292F000E3221 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B91BFD1B39292F000E3221 /* DetailViewController.swift */; };
 		86B91C011B39292F000E3221 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B91BFE1B39292F000E3221 /* ListViewController.swift */; };
@@ -239,6 +240,7 @@
 		864D45D91B3921BA00E4F465 /* SendClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendClass.h; sourceTree = "<group>"; };
 		864D45DA1B3921BA00E4F465 /* SendClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendClass.m; sourceTree = "<group>"; };
 		864D45DC1B39227E00E4F465 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		86731F2A1B3A268500ED25CB /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		86B91BFB1B3928DF000E3221 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		86B91BFD1B39292F000E3221 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		86B91BFE1B39292F000E3221 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -740,6 +742,7 @@
 				864D45D11B3921AA00E4F465 /* MainCardViewController.swift */,
 				86B91BFD1B39292F000E3221 /* DetailViewController.swift */,
 				86B91BFE1B39292F000E3221 /* ListViewController.swift */,
+				86731F2A1B3A268500ED25CB /* AccountViewController.swift */,
 				86B91BFF1B39292F000E3221 /* ListCell.swift */,
 			);
 			name = Controllers;
@@ -832,6 +835,7 @@
 				86B91C001B39292F000E3221 /* DetailViewController.swift in Sources */,
 				864D45D71B3921AA00E4F465 /* AccountModel.swift in Sources */,
 				86B91BFC1B3928DF000E3221 /* Common.swift in Sources */,
+				86731F2B1B3A268500ED25CB /* AccountViewController.swift in Sources */,
 				864D45D81B3921AA00E4F465 /* LeadModel.swift in Sources */,
 				864D45D51B3921AA00E4F465 /* ParentViewController.swift in Sources */,
 				86B91C071B39299A000E3221 /* FadeTransition.swift in Sources */,

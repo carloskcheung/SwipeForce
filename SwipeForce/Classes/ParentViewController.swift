@@ -11,20 +11,21 @@ import UIKit
 class ParentViewController: UIViewController, SFRestDelegate {
     
     var allCardData : [LeadModel] = []
+    //var allCardData: [LeadModel]?
+    
+    var index : Int = 0;
+    // everytime swipe index : int x+4?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let restAPI = SFRestAPI.sharedInstance()
-        let request = restAPI.requestForQuery("SELECT Id, Name, Email, Status, Company, Phone, Fax, MobilePhone, Title, LeadSource, CreatedDate, City, State, LastActivityDate FROM Lead ORDER BY Name LIMIT 20")
-        
-        // OFFSET 20 --> SQL nth query look it up
+        let request = restAPI.requestForQuery("SELECT Id, Name, Email, Status, Company, Phone, Fax, MobilePhone, Title, LeadSource, CreatedDate, City, State, LastActivityDate FROM Lead ORDER BY Name LIMIT 1")
+        // OFFSET 20 --> SQL nth query look it up -- when you finish 20 you get more
 
-        // Do any additional setup after loading the view.
         SendClass.doThatThing(request, withDelegate: self)
     }
 
-    
     
     
     // MARK: - SFRestDelegate Methods
@@ -34,6 +35,7 @@ class ParentViewController: UIViewController, SFRestDelegate {
         if let records = dataResponse.objectForKey("records") as? NSArray {
             println("request:didLoadResponse: number records = \(records.count)")
             
+//            var answerArray = [LeadModel]()
             for record in records {
                 var sfdcid = record.objectForKey("Id") as? String
                 var name = record.objectForKey("Name") as? String
@@ -50,7 +52,14 @@ class ParentViewController: UIViewController, SFRestDelegate {
                 var state = record.objectForKey("State") as? String
                 var lastactivitydate = record.objectForKey("LastActivityDate") as? String
                 
-             //append to array
+                if ((sfdcid != nil) && (name != nil)) {
+                   allCardData.append(LeadModel(sfdcid: sfdcid!, name: name!, email: email!, company: company!, phone: phone!, fax: fax!, mobilephone: mobilephone!, title: title!, leadsource: leadsource!, createddate: createddate!, status: status!, city: city!, state: state!, lastactivitydate: lastactivitydate!))
+                    
+                    
+                    
+                }
+                
+            println("Card data \(allCardData[1]) !")
                 
             }
         }
@@ -76,22 +85,26 @@ class ParentViewController: UIViewController, SFRestDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - Navigation
-    
-    var index : Int = 0;
-    // everytime swipe {
-    // index : int x+4}
 
+    
+    @IBAction func onLogin(sender: AnyObject) {
+            performSegueWithIdentifier("load2MainCardSegue", sender: nil)
+        
+    }
+    
+    
+    
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if var cardVC = segue.destinationViewController as? MainCardViewController {
+        
+           if (segue.identifier == "load2MainCardSegue") {
+            var cardVC = segue.destinationViewController as! MainCardViewController
             cardVC.cardData = allCardData[index]
-
-        }
+            
+            }
     }
 
 }
