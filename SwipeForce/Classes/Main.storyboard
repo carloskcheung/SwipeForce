@@ -1041,15 +1041,15 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Mail" id="s79-oG-VCA">
-                                                        <rect key="frame" x="50" y="18" width="14" height="11"/>
+                                                        <rect key="frame" x="50" y="23" width="14" height="11"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Phone" id="HLF-NI-ZqW">
-                                                        <rect key="frame" x="153" y="17" width="14" height="14"/>
+                                                        <rect key="frame" x="153" y="22" width="14" height="14"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Write_button" id="MbR-ML-mUz">
-                                                        <rect key="frame" x="257" y="17" width="13" height="13"/>
+                                                        <rect key="frame" x="257" y="22" width="13" height="13"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -1237,12 +1237,18 @@
                         <outlet property="actionButtonsView" destination="3cf-3P-gOT" id="FQM-mi-ftN"/>
                         <outlet property="backgroundImage" destination="lAm-HM-ri1" id="4Wg-w4-Riz"/>
                         <outlet property="backgroundImageOverlay" destination="eiz-kC-77C" id="OxG-Wu-InK"/>
+                        <outlet property="backgroundView" destination="dcs-DY-7XA" id="7Cx-Xi-L57"/>
                         <outlet property="cardBackgroundView" destination="Gyu-4V-WrG" id="How-FX-LIO"/>
+                        <outlet property="contactInfoCard" destination="OCt-Yt-fVp" id="utV-HA-Kr3"/>
                         <outlet property="contactInfoPanel" destination="lOv-Ue-ZpE" id="CJ4-RP-iXw"/>
+                        <outlet property="leadInfoCard" destination="n3B-LI-Nwf" id="YRk-dH-hj6"/>
                         <outlet property="leadInfoPanel" destination="xEU-M6-IvY" id="TrQ-kg-tIy"/>
+                        <outlet property="mailButton" destination="s79-oG-VCA" id="D8j-Ul-lvi"/>
                         <outlet property="nameLabel" destination="k2w-Mb-bac" id="a0c-aa-lyd"/>
+                        <outlet property="noteButton" destination="MbR-ML-mUz" id="mfu-vE-JjD"/>
                         <outlet property="personalInfoCard" destination="Uva-WG-8yM" id="lJi-05-6g7"/>
                         <outlet property="personalInfoPanel" destination="zLA-dy-kcS" id="Fh5-mg-PU9"/>
+                        <outlet property="phoneButton" destination="HLF-NI-ZqW" id="aQn-Kk-0Rv"/>
                         <outlet property="photoImage" destination="uxV-XZ-7xf" id="sWE-Og-JSN"/>
                         <outlet property="scrollView" destination="tqg-qg-vHo" id="xQB-H0-sCO"/>
                     </connections>
@@ -2984,7 +2990,7 @@
                                 <rect key="frame" x="81" y="241" width="158" height="196"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Card 3-1" id="fxO-a3-FzS">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Card 3-1-1" id="fxO-a3-FzS">
                                 <rect key="frame" x="81" y="241" width="158" height="196"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -3095,7 +3101,7 @@
         <image name="Building" width="14" height="14"/>
         <image name="Card 1" width="158" height="196"/>
         <image name="Card 2-1" width="158" height="196"/>
-        <image name="Card 3-1" width="248" height="308"/>
+        <image name="Card 3-1-1" width="158" height="196"/>
         <image name="Card 4-1" width="158" height="196"/>
         <image name="Checkmark Copy" width="9" height="8"/>
         <image name="Checkmark White" width="9" height="8"/>
@@ -3149,6 +3155,6 @@
         <segue reference="Ddz-5Y-wUJ"/>
         <segue reference="NfU-Mh-QPi"/>
         <segue reference="iPW-KV-ecr"/>
-        <segue reference="4vu-hW-eFv"/>
+        <segue reference="Gfz-IB-gZp"/>
     </inferredMetricsTieBreakers>
 </document>

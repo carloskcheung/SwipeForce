@@ -273,46 +273,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             break
         }
     }
-    
-    func reloadCards() {
-        firstCardNameLabel.text = cardData.name
-        firstCardEmailLabel.text = cardData.email
-        firstCardTitleLabel.text = cardData.title
-        firstCardCompanyLabel.text = cardData.company
-        firstCardCityLabel.text = cardData.city
-        firstCardStateLabel.text = cardData.state
-        firstCardSourceLabel.text = cardData.leadsource
-        firstCardStatusLabel.text = cardData.status
-        
-        
-        secondCardNameLabel.text = cardData.name
-        secondCardEmailLabel.text = cardData.email
-        secondCardTitleLabel.text = cardData.title
-        secondCardCompanyLabel.text = cardData.company
-        secondCardCityLabel.text = cardData.city
-        secondCardStateLabel.text = cardData.state
-        secondCardSourceLabel.text = cardData.leadsource
-        secondCardStatusLabel.text = cardData.status
-        
-        
-        thirdCardNameLabel.text = cardData.name
-        thirdCardEmailLabel.text = cardData.email
-        thirdCardTitleLabel.text = cardData.title
-        thirdCardCompanyLabel.text = cardData.company
-        thirdCardCityLabel.text = cardData.city
-        thirdCardStateLabel.text = cardData.state
-        thirdCardSourceLabel.text = cardData.leadsource
-        thirdCardStatusLabel.text = cardData.status
-        
-        fourthCardNameLabel.text = cardData.name
-        fourthCardEmailLabel.text = cardData.email
-        fourthCardTitleLabel.text = cardData.title
-        fourthCardCompanyLabel.text = cardData.company
-        fourthCardCityLabel.text = cardData.city
-        fourthCardStateLabel.text = cardData.state
-        fourthCardSourceLabel.text = cardData.leadsource
-        fourthCardStatusLabel.text = cardData.status
-    }
+   
     
     func progressValue(value: CGFloat, refValueMin: CGFloat, refValueMax: CGFloat, convertValueMin: CGFloat, convertValueMax: CGFloat) -> CGFloat {
         
