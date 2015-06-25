@@ -37,7 +37,7 @@ class NumberViewController: UIViewController {
             self.radarImage.transform = CGAffineTransformRotate(self.radarImage.transform, CGFloat(3.14))
         }, completion: nil)
         
-        delay(2, { () -> () in
+        delay(0.5, { () -> () in
             self.Timer = NSTimer.scheduledTimerWithTimeInterval(0.08, target: self, selector: Selector("UpdateTimer"), userInfo: nil, repeats: true)
         })
         

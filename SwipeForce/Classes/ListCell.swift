@@ -45,7 +45,6 @@ class ListCell: UITableViewCell {
         originalRejectIcon = rejectIcon.center
         originalLaterIcon = laterIcon.center
         
-        
     }
     
     // Conditions for different state of Pan
