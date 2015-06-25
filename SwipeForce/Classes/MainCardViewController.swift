@@ -53,6 +53,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var secondCardStatusLabel: UILabel!
     @IBOutlet weak var secondCardNameLabel: UILabel!
     @IBOutlet weak var secondCardBackgroundView: UIView!
+    @IBOutlet weak var secondCardPhotoImage: UIImageView!
     
     @IBOutlet weak var thirdCardOverlay: UIView!
     @IBOutlet weak var thirdCardAccptedImage: UIImageView!
@@ -67,6 +68,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var thirdCardStatusLabel: UILabel!
     @IBOutlet weak var thirdCardNameLabel: UILabel!
     @IBOutlet weak var thirdCardBackgroundView: UIView!
+    @IBOutlet weak var thirdCardPhotoimage: UIImageView!
     
     @IBOutlet weak var fourthCardOverlay: UIView!
     @IBOutlet weak var fourthCardAcceptedImage: UIImageView!
@@ -77,6 +79,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var fourthCardCityLabel: UILabel!
     @IBOutlet weak var fourthCardStateLabel: UILabel!
     @IBOutlet weak var fourthCardEmailLabel: UILabel!
+    @IBOutlet weak var fourthCardPhotoImage: UIImageView!
     @IBOutlet weak var fourthCardSourceLabel: UILabel!
     @IBOutlet weak var fourthCardStatusLabel: UILabel!
     @IBOutlet weak var fourthCardNameLabel: UILabel!
@@ -175,10 +178,13 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         cardNameLabel = [firstCardNameLabel, secondCardNameLabel, thirdCardNameLabel, fourthCardNameLabel]
         cardBackgroundView = [firstCardBackgroundView, secondCardBackgroundView, thirdCardBackgroundView, fourthCardBackgroundView]
 
+        
+        
         cardOverlay[0].alpha = 0
         cardAcceptedImage[0].hidden == true
         cardRejectedImage[0].hidden == true
         cardLaterImage[0].hidden == true
+        
         
         cardBackgroundImage.image = self.photoImage.image
         cardBackgroundImage.transform = CGAffineTransformMakeScale(2, 2)

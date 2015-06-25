@@ -328,15 +328,15 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7QU-pR-GCX" userLabel="sourceLabel">
-                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7QU-pR-GCX" userLabel="sourceLabel">
+                                                <rect key="frame" x="30" y="123" width="100" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o0Y-sV-b9W" userLabel="statusLabel">
-                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o0Y-sV-b9W" userLabel="statusLabel">
+                                                <rect key="frame" x="152" y="123" width="100" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -459,15 +459,15 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AEh-6o-Icr" userLabel="sourceLabel">
-                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AEh-6o-Icr" userLabel="sourceLabel">
+                                                <rect key="frame" x="30" y="123" width="100" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hii-zF-3xR" userLabel="statusLabel">
-                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hii-zF-3xR" userLabel="statusLabel">
+                                                <rect key="frame" x="152" y="123" width="100" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -590,15 +590,15 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M9c-kB-O0z" userLabel="sourceLabel">
-                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M9c-kB-O0z" userLabel="sourceLabel">
+                                                <rect key="frame" x="30" y="123" width="100" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oCi-uS-PrH" userLabel="statusLabel">
-                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oCi-uS-PrH" userLabel="statusLabel">
+                                                <rect key="frame" x="152" y="123" width="100" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -721,15 +721,15 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0o4-i2-RKR" userLabel="sourceLabel">
-                                                <rect key="frame" x="62" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0o4-i2-RKR" userLabel="sourceLabel">
+                                                <rect key="frame" x="12" y="123" width="118" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hg4-ap-q8S" userLabel="statusLabel">
-                                                <rect key="frame" x="187" y="123" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hg4-ap-q8S" userLabel="statusLabel">
+                                                <rect key="frame" x="152" y="123" width="130" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -897,6 +897,7 @@
                         <outlet property="fourthCardLaterImage" destination="F0c-Co-HON" id="uqg-fN-7Kb"/>
                         <outlet property="fourthCardNameLabel" destination="cAa-JV-qBo" id="HD8-8j-MLS"/>
                         <outlet property="fourthCardOverlay" destination="nCH-n2-wr2" id="Wm5-r5-hGy"/>
+                        <outlet property="fourthCardPhotoImage" destination="kQH-1x-uyt" id="6yL-9N-12g"/>
                         <outlet property="fourthCardRejectedImage" destination="jYx-WS-xuQ" id="Oam-2B-63E"/>
                         <outlet property="fourthCardSourceLabel" destination="7QU-pR-GCX" id="AUN-IS-eNz"/>
                         <outlet property="fourthCardStateLabel" destination="n3M-Av-cFm" id="IMc-aH-1dW"/>
@@ -914,6 +915,7 @@
                         <outlet property="secondCardLaterImage" destination="fdZ-uK-83f" id="YG3-k9-RFJ"/>
                         <outlet property="secondCardNameLabel" destination="UMM-s3-3C5" id="ak4-ab-SqK"/>
                         <outlet property="secondCardOverlay" destination="t4j-M0-QFh" id="lCD-BJ-39E"/>
+                        <outlet property="secondCardPhotoImage" destination="mFL-iw-fI3" id="1l7-Fv-dgT"/>
                         <outlet property="secondCardRejectedImage" destination="gec-ib-1kJ" id="QeP-dh-Vwa"/>
                         <outlet property="secondCardSourceLabel" destination="M9c-kB-O0z" id="9WD-A2-E0j"/>
                         <outlet property="secondCardStateLabel" destination="a2Y-uN-jhb" id="id1-NA-W7C"/>
@@ -929,6 +931,7 @@
                         <outlet property="thirdCardLaterImage" destination="CS8-zt-8aa" id="grF-6j-qRc"/>
                         <outlet property="thirdCardNameLabel" destination="Dmg-jj-w5B" id="461-nW-OxZ"/>
                         <outlet property="thirdCardOverlay" destination="z8d-iJ-vKD" id="6o3-si-NcH"/>
+                        <outlet property="thirdCardPhotoimage" destination="EP9-ET-M6L" id="EJo-3j-jIq"/>
                         <outlet property="thirdCardRejectedImage" destination="nWQ-fI-58B" id="gzt-6f-WfN"/>
                         <outlet property="thirdCardSourceLabel" destination="AEh-6o-Icr" id="cDt-jz-EUs"/>
                         <outlet property="thirdCardStateLabel" destination="azV-YD-pJl" id="NgM-GL-FDl"/>
