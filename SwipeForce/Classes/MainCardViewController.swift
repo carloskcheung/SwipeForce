@@ -39,6 +39,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var firstCardEmailLabel: UILabel!
     @IBOutlet weak var firstCardNameLabel: UILabel!
     @IBOutlet weak var firstCardBackgroundView: UIView!
+    @IBOutlet weak var firstCardPhotoImage: UIImageView!
     
     @IBOutlet weak var secondCardOverlay: UIView!
     @IBOutlet weak var secondCardAcceptedImage: UIImageView!
@@ -68,7 +69,7 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var thirdCardStatusLabel: UILabel!
     @IBOutlet weak var thirdCardNameLabel: UILabel!
     @IBOutlet weak var thirdCardBackgroundView: UIView!
-    @IBOutlet weak var thirdCardPhotoimage: UIImageView!
+    @IBOutlet weak var thirdCardPhotoImage: UIImageView!
     
     @IBOutlet weak var fourthCardOverlay: UIView!
     @IBOutlet weak var fourthCardAcceptedImage: UIImageView!
@@ -79,16 +80,15 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     @IBOutlet weak var fourthCardCityLabel: UILabel!
     @IBOutlet weak var fourthCardStateLabel: UILabel!
     @IBOutlet weak var fourthCardEmailLabel: UILabel!
-    @IBOutlet weak var fourthCardPhotoImage: UIImageView!
     @IBOutlet weak var fourthCardSourceLabel: UILabel!
     @IBOutlet weak var fourthCardStatusLabel: UILabel!
     @IBOutlet weak var fourthCardNameLabel: UILabel!
     @IBOutlet weak var fourthCardBackgroundView: UIView!
+    @IBOutlet weak var fourthCardPhotoImage: UIImageView!
     
     @IBOutlet weak var tagView: UIView!
     @IBOutlet weak var labelView: UIView!
     
-    @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var labelLabel: UILabel!
     
@@ -98,15 +98,19 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     
     @IBOutlet weak var actionButtonsView: UIView!
     
+    var passNumber: String!
+    var passBubble: UIView!
+    @IBOutlet weak var numberBubble: UIView!
+    
     let whiteColor = UIColor(red:1, green:1, blue:1, alpha:1)
     let blueColor = UIColor(red:0.02, green:0.51, blue:0.86, alpha:1)
     let greenColor = UIColor(red:0.16, green:0.7, blue:0.48, alpha:1)
     let orangeColor = UIColor(red:0.96, green:0.65, blue:0.14, alpha:1)
     let redColor = UIColor(red:0.76, green:0.35, blue:0.46, alpha:1)
-    let blueAlphaColor = UIColor(red:0.02, green:0.51, blue:0.86, alpha:0.4)
-    let greenAlphaColor = UIColor(red:0.16, green:0.7, blue:0.48, alpha:0.4)
-    let orangeAlphaColor = UIColor(red:0.96, green:0.65, blue:0.14, alpha:0.4)
-    let redAlphaColor = UIColor(red:0.76, green:0.35, blue:0.46, alpha:0.4)
+    let blueAlphaColor = UIColor(red:0.02, green:0.51, blue:0.86, alpha:0.3)
+    let greenAlphaColor = UIColor(red:0.16, green:0.7, blue:0.48, alpha:0.3)
+    let orangeAlphaColor = UIColor(red:0.96, green:0.65, blue:0.14, alpha:0.3)
+    let redAlphaColor = UIColor(red:0.76, green:0.35, blue:0.46, alpha:0.3)
     
     var cardInitialCenter: CGPoint!
     var clockWise: Bool!
@@ -131,9 +135,12 @@ class MainCardViewController: UIViewController, SFRestDelegate {
     var cardStatusLabel: [UILabel]!
     var cardNameLabel: [UILabel]!
     var cardBackgroundView: [UIView]!
+    var cardPhotoImage: [UIImageView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        numberBubble = passBubble
         
         var darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Light)
         var blurView = UIVisualEffectView(effect: darkBlur)
@@ -153,15 +160,11 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         labelView.layer.cornerRadius = 5.0
         labelView.layer.masksToBounds = true
         
-//        self.nameLabel.text = names[0]
+        //        self.nameLabel.text = names[0]
         self.labelLabel!.text = labels[0]
         
-        photoImage.layer.borderWidth = 3.0
-        photoImage.layer.masksToBounds = false
-        photoImage.layer.borderColor = UIColor.whiteColor().CGColor
-        photoImage.layer.cornerRadius = self.photoImage.frame.size.width / 2
-        photoImage.clipsToBounds = true
         
+
         cards = [firstCard, secondCard, thirdCard, fourthCard]
         cardLocation = [firstCard.frame, secondCard.frame, thirdCard.frame, fourthCard.frame]
         cardOverlay = [firstCardOverlay, secondCardOverlay, thirdCardOverlay, fourthCardOverlay]
@@ -177,26 +180,51 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         cardStatusLabel = [firstCardStatusLabel, secondCardStatusLabel, thirdCardStatusLabel, fourthCardStatusLabel]
         cardNameLabel = [firstCardNameLabel, secondCardNameLabel, thirdCardNameLabel, fourthCardNameLabel]
         cardBackgroundView = [firstCardBackgroundView, secondCardBackgroundView, thirdCardBackgroundView, fourthCardBackgroundView]
-
-        
+        cardPhotoImage = [firstCardPhotoImage, secondCardPhotoImage, thirdCardPhotoImage, fourthCardPhotoImage]
         
         cardOverlay[0].alpha = 0
         cardAcceptedImage[0].hidden == true
         cardRejectedImage[0].hidden == true
         cardLaterImage[0].hidden == true
         
+        cardPhotoImage[0].layer.borderWidth = 3.0
+        cardPhotoImage[0].layer.masksToBounds = false
+        cardPhotoImage[0].layer.borderColor = UIColor.whiteColor().CGColor
+        cardPhotoImage[0].layer.cornerRadius = self.cardPhotoImage[0].frame.size.width / 2
+        cardPhotoImage[0].clipsToBounds = true
+        cardPhotoImage[1].layer.borderWidth = 3.0
+        cardPhotoImage[1].layer.masksToBounds = false
+        cardPhotoImage[1].layer.borderColor = UIColor.whiteColor().CGColor
+        cardPhotoImage[1].layer.cornerRadius = self.cardPhotoImage[0].frame.size.width / 2
+        cardPhotoImage[1].clipsToBounds = true
+        cardPhotoImage[2].layer.borderWidth = 3.0
+        cardPhotoImage[2].layer.masksToBounds = false
+        cardPhotoImage[2].layer.borderColor = UIColor.whiteColor().CGColor
+        cardPhotoImage[2].layer.cornerRadius = self.cardPhotoImage[0].frame.size.width / 2
+        cardPhotoImage[2].clipsToBounds = true
+        cardPhotoImage[3].layer.borderWidth = 3.0
+        cardPhotoImage[3].layer.masksToBounds = false
+        cardPhotoImage[3].layer.borderColor = UIColor.whiteColor().CGColor
+        cardPhotoImage[3].layer.cornerRadius = self.cardPhotoImage[0].frame.size.width / 2
+        cardPhotoImage[3].clipsToBounds = true
         
-        cardBackgroundImage.image = self.photoImage.image
+        cardBackgroundImage.image = self.cardPhotoImage[0].image
         cardBackgroundImage.transform = CGAffineTransformMakeScale(2, 2)
         
         firstCardBackgroundView.backgroundColor = blueColor
+        secondCardBackgroundView.backgroundColor = greenColor
+        thirdCardBackgroundView.backgroundColor = orangeColor
+        fourthCardBackgroundView.backgroundColor = redColor
+        
         cardBackgroundOverlay.backgroundColor = self.cardBackgroundView[0].backgroundColor
         cardBackgroundOverlay.alpha = 0.3
         
-// need to adjust to correct labels in maincardview
-//        reloadCards()
+        // need to adjust to correct labels in maincardview
+        //        reloadCards()
         cardSwitch()
+        //
     }
+    
     
     
     func cardSwitch(){
@@ -279,7 +307,9 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             break
         }
     }
-   
+    
+    
+    
     
     func progressValue(value: CGFloat, refValueMin: CGFloat, refValueMax: CGFloat, convertValueMin: CGFloat, convertValueMax: CGFloat) -> CGFloat {
         
@@ -354,8 +384,8 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                 delay(0.4) {
                     self.cards[0].transform = CGAffineTransformIdentity
                     self.animateCards()
+                    self.animateBackground()
                 }
-                
             }
             else if translation.x <= -100 && cards[0].center.y < 480 {
                 self.onDoneWithCard()
@@ -365,8 +395,8 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                 delay(0.4) {
                     self.cards[0].transform = CGAffineTransformIdentity
                     self.animateCards()
+                    self.animateBackground()
                 }
-                
             }
             else if cards[0].center.y > 480 {
                 self.onDoneWithCard()
@@ -376,8 +406,9 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                 delay(0.4) {
                     self.cards[0].transform = CGAffineTransformIdentity
                     self.animateCards()
+                    self.animateBackground()
+                    
                 }
-                
             }
         }
     }
@@ -388,18 +419,22 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         cardSwitch()
     }
     
+    
+    func animateBackground() {
+        self.cardBackgroundImage.image = self.cardPhotoImage[0].image
+        self.cardBackgroundImage.transform = CGAffineTransformMakeScale(3, 3);
+        self.cardBackgroundOverlay.backgroundColor = self.cardBackgroundView[1].backgroundColor
+        self.cardBackgroundOverlay.alpha = 0.3
+    }
+    
     func animateCards() {
         UIView.animateWithDuration(0.4, animations: { () -> Void in
+            
             self.cards[3].alpha = 1
             self.cards[0].alpha = 0
             self.cards[1].frame = self.cardLocation[0]
             self.cards[2].frame = self.cardLocation[1]
             self.cards[3].frame = self.cardLocation[2]
-            
-            self.cardBackgroundImage.image = self.photoImage.image
-            self.cardBackgroundImage.transform = CGAffineTransformMakeScale(3, 3);
-            self.cardBackgroundOverlay.backgroundColor = self.cardBackgroundView[0].backgroundColor
-            self.cardBackgroundOverlay.alpha = 0.3
             
             }, completion: { (Bool) -> Void in
                 var topCard = self.cards.removeAtIndex(0)
@@ -435,6 +470,8 @@ class MainCardViewController: UIViewController, SFRestDelegate {
                 self.cardNameLabel.append(topCardNameLabel)
                 var topCardBackgroundView = self.cardBackgroundView.removeAtIndex(0)
                 self.cardBackgroundView.append(topCardBackgroundView)
+                var topCardPhotoImage = self.cardPhotoImage.removeAtIndex(0)
+                self.cardPhotoImage.append(topCardPhotoImage)
         })
     }
     
@@ -455,8 +492,8 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             self.cards[0].transform = CGAffineTransformIdentity
             self.onDoneWithCard()
             self.animateCards()
+            self.animateBackground()
         }
-        
     }
     
     @IBAction func onTapRejected(sender: UITapGestureRecognizer) {
@@ -474,12 +511,11 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             }, completion: nil)
         
         delay(0.4) {
-            
             self.cards[0].transform = CGAffineTransformIdentity
             self.onDoneWithCard()
             self.animateCards()
+            self.animateBackground()
         }
-       
     }
     
     @IBAction func onTapLater(sender: UITapGestureRecognizer) {
@@ -498,9 +534,9 @@ class MainCardViewController: UIViewController, SFRestDelegate {
             self.cards[0].transform = CGAffineTransformIdentity
             self.onDoneWithCard()
             self.animateCards()
+            self.animateBackground()
             self.actionButtonsView.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0)
         }
-        
     }
     
     class func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
@@ -519,24 +555,29 @@ class MainCardViewController: UIViewController, SFRestDelegate {
         performSegueWithIdentifier("card2DetailSegue", sender: nil)
     }
     
-
+    // CARLOS MARK: - IBAction Methods -- LOGOUT
+    
+    @IBAction func logoutButtonPressed(sender: AnyObject) {
+        SFAuthenticationManager.sharedManager().logoutAllUsers()
+    }
     
     
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "card2DetailSegue") {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
-
             var detailVC = segue!.destinationViewController as! DetailViewController;
             detailVC.passName = cardNameLabel[0].text
-            detailVC.passPhoto = photoImage.image
+            detailVC.passPhoto = cardPhotoImage[0].image
             detailVC.passColor = cardBackgroundView[0].backgroundColor
-            detailVC.passBackgroundImageOverlay = cardBackgroundOverlay
             detailVC.passBackgroundImage = cardBackgroundImage.image
             
             detailVC.mainCardViewController = self
         }
     }
+    
+    
+    
     
     
     
