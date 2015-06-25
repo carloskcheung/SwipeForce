@@ -26,15 +26,25 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var rejectWhiteIcon: UIImageView!
     
     var listSelect: Int!
-    var namesLater = ["June Lim", "Eddie Le Breton", "Dan Adair", "Pawan Gaargi", "Jon Liak"]
-    var titlesLater = ["Lead PM", "GM", "PM", "Lead PM", "PM"]
-    var companiesLater = ["Zynga","Zynga","Zynga","Zynga","Zynga"]
-    var namesAccepted = ["Carlos", "Nan", "Tim"]
-    var titlesAccepted = ["Engineer", "Designer", "Engineer"]
-    var companiesAccepted = ["Optimizely","Unknown","CodePath"]
-    var namesRejected = ["Posey", "Bumgarner", "Aoki", "Romo"]
-    var titlesRejected = ["Catcher", "Pitcher", "Hitter", "Pitcher"]
-    var companiesRejected = ["SF Giants","SF Giants","SF Giants","SF Giants"]
+    var namesLater = ["Andy Young", "Betty Bair", "Bill Dadio Jr", "Brenda Mcclure", "Carolyn Crenshaw"]
+    
+    var titlesLater = ["SVP", "VP Admin", "CFO", "CFO", "VP Technology"]
+    
+    var companiesLater = ["Dickenson plc","American Banking Corp","Zenith Industrial Partners","Cadinal Inc.","Ace Iron and Steel Inc."]
+    
+    var namesAccepted = ["David Monaco", "Eugena Luce", "Jack Rogers"]
+    
+    var titlesAccepted = ["CFO", "CEO", "VP, Facilities"]
+    
+    var companiesAccepted = ["Blues Entertainment Corp","Pacific Retail Group","Burlington Textiles Corp of America"]
+    
+    var namesRejected = ["Jeff Glimpse", "Kathy Snyder", "Kristen Akin", "Mike Braund"]
+    
+    var titlesRejected = ["SVP, Procurement", "Regional General Manager", "Director, Warehouse", "VP Technology"]
+    
+    var companiesRejected = ["Jackson Controls","TNR Corp","Aethna Home Products","Metropolitan Health Services"]
+    
+
     var listSelectGlobal = NSUserDefaults.standardUserDefaults()
     
     
