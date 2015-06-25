@@ -10,6 +10,7 @@ import UIKit
 
 class ListCell: UITableViewCell {
     
+    @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var companyLabel: UILabel!
