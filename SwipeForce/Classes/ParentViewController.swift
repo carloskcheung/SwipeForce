@@ -91,6 +91,9 @@ class ParentViewController: UIViewController, SFRestDelegate {
     }
     
     
+    @IBAction func logoutButtonPressed(sender: AnyObject) {
+        SFAuthenticationManager.sharedManager().logoutAllUsers()
+    }
     
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

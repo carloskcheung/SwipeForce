@@ -250,6 +250,16 @@
                                     <action selector="onLogin:" destination="obB-5G-4WD" eventType="touchUpInside" id="CoB-Pj-0DS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rrQ-KI-fv4">
+                                <rect key="frame" x="131" y="525" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="obB-5G-4WD" eventType="touchUpInside" id="kex-Zv-3HE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -357,7 +367,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" id="kQH-1x-uyt" userLabel="Fourth Photo Image">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourthPerson" id="kQH-1x-uyt" userLabel="Fourth Photo Image">
                                                 <rect key="frame" x="106" y="23" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -488,7 +498,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" id="EP9-ET-M6L" userLabel="Third Photo Image">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thirdPerson" id="EP9-ET-M6L" userLabel="Third Photo Image">
                                                 <rect key="frame" x="106" y="23" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -619,7 +629,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" id="mFL-iw-fI3" userLabel="Second Photo Image">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondPerson" id="mFL-iw-fI3" userLabel="Second Photo Image">
                                                 <rect key="frame" x="106" y="23" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -3064,10 +3074,13 @@
         <image name="card_view_nav" width="35" height="34"/>
         <image name="card_view_nav_selected-2" width="35" height="34"/>
         <image name="cloud" width="69" height="38"/>
+        <image name="fourthPerson" width="100" height="100"/>
         <image name="list_view_nav" width="35" height="35"/>
         <image name="list_view_nav_selected-2" width="35" height="35"/>
         <image name="profile_image" width="75" height="63"/>
         <image name="radar" width="218" height="218"/>
+        <image name="secondPerson" width="200" height="200"/>
+        <image name="thirdPerson" width="200" height="200"/>
         <image name="view_leads_button" width="283" height="62"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -3076,11 +3089,11 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="aLp-Xr-5JF"/>
-        <segue reference="Cz9-VL-Bbw"/>
-        <segue reference="NfU-Mh-QPi"/>
+        <segue reference="Ddz-5Y-wUJ"/>
+        <segue reference="D6b-IJ-gEP"/>
         <segue reference="iPW-KV-ecr"/>
-        <segue reference="Z90-8f-pYw"/>
+        <segue reference="NfU-Mh-QPi"/>
         <segue reference="4vu-hW-eFv"/>
+        <segue reference="Cz9-VL-Bbw"/>
     </inferredMetricsTieBreakers>
 </document>
