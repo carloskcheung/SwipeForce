@@ -57,6 +57,9 @@
 		86B91C021B39292F000E3221 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B91BFF1B39292F000E3221 /* ListCell.swift */; };
 		86B91C061B39299A000E3221 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B91C041B39299A000E3221 /* BaseTransition.swift */; };
 		86B91C071B39299A000E3221 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B91C051B39299A000E3221 /* FadeTransition.swift */; };
+		86DC0B4C1B3B88DC00B86DE6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC0B4B1B3B88DC00B86DE6 /* WelcomeViewController.swift */; };
+		86DC0B4F1B3B88EE00B86DE6 /* NumberTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC0B4D1B3B88EE00B86DE6 /* NumberTransition.swift */; };
+		86DC0B501B3B88EE00B86DE6 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC0B4E1B3B88EE00B86DE6 /* NumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +250,9 @@
 		86B91BFF1B39292F000E3221 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		86B91C041B39299A000E3221 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		86B91C051B39299A000E3221 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		86DC0B4B1B3B88DC00B86DE6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		86DC0B4D1B3B88EE00B86DE6 /* NumberTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTransition.swift; sourceTree = "<group>"; };
+		86DC0B4E1B3B88EE00B86DE6 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -738,6 +744,8 @@
 		86B91C031B39293D000E3221 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				86DC0B4E1B3B88EE00B86DE6 /* NumberViewController.swift */,
+				86DC0B4B1B3B88DC00B86DE6 /* WelcomeViewController.swift */,
 				864D45D01B3921AA00E4F465 /* ParentViewController.swift */,
 				864D45D11B3921AA00E4F465 /* MainCardViewController.swift */,
 				86B91BFD1B39292F000E3221 /* DetailViewController.swift */,
@@ -751,6 +759,7 @@
 		86B91C081B3929A0000E3221 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				86DC0B4D1B3B88EE00B86DE6 /* NumberTransition.swift */,
 				86B91C041B39299A000E3221 /* BaseTransition.swift */,
 				86B91C051B39299A000E3221 /* FadeTransition.swift */,
 			);
@@ -836,6 +845,9 @@
 				864D45D71B3921AA00E4F465 /* AccountModel.swift in Sources */,
 				86B91BFC1B3928DF000E3221 /* Common.swift in Sources */,
 				86731F2B1B3A268500ED25CB /* AccountViewController.swift in Sources */,
+				86DC0B501B3B88EE00B86DE6 /* NumberViewController.swift in Sources */,
+				86DC0B4C1B3B88DC00B86DE6 /* WelcomeViewController.swift in Sources */,
+				86DC0B4F1B3B88EE00B86DE6 /* NumberTransition.swift in Sources */,
 				864D45D81B3921AA00E4F465 /* LeadModel.swift in Sources */,
 				864D45D51B3921AA00E4F465 /* ParentViewController.swift in Sources */,
 				86B91C071B39299A000E3221 /* FadeTransition.swift in Sources */,
